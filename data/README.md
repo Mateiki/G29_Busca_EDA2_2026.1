@@ -2,9 +2,9 @@
 
 O conjunto de dados utilizado neste projeto foi obtido a partir do Kaggle:
 
-🔗 https://www.kaggle.com/datasets/moazeldsokyx/imdb-top-10000-movies-dataset/data
+🔗 https://www.kaggle.com/datasets/kurtnakasato/imdb-100000-moviestvshows
 
-Este dataset contém informações sobre os **10.000 filmes mais bem avaliados do IMDb**, incluindo diversos atributos como título, ano de lançamento, avaliação, entre outros.
+Este dataset contém informações sobre os **100.000 filmes e séries mais bem avaliados do IMDb**, incluindo diversos atributos como título, ano de lançamento, avaliação, entre outros.
 
 ---
 
