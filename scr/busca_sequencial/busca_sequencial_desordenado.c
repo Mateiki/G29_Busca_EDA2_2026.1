@@ -35,4 +35,36 @@ int main() {
     }
 
     fclose(dataset);
+
+    int total_filmes = i;
+
+    //Busca Sequencial:
+        char busca[100];
+
+    printf("Digite o nome do filme: ");
+    fgets(busca, 100, stdin);
+
+    // remover \n da entrada do usuário
+    busca[strcspn(busca, "\n")] = '\0';
+
+    int encontrado = 0;
+
+    for (int j = 0; j < total_filmes; j++) {
+        if (strcmp(lista[j], busca) == 0) {
+            printf("Filme encontrado na posicao %d\n", j);
+            encontrado = 1;
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        printf("Filme nao encontrado\n");
+    }
+
+    // Liberar memória
+    for (int j = 0; j < total_filmes; j++) {
+        free(lista[j]);
+    }
+
+    return 0;
 }
