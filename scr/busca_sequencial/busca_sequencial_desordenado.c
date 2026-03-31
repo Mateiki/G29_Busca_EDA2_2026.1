@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #define MAX_FILMES 101606 //Quantidade de filmes
 #define TAM_BUFFER 256
@@ -49,6 +50,10 @@ int main() {
 
     int encontrado = 0;
 
+    //Início da medição de tempo
+    clock_t inicio, fim;
+    inicio = clock();
+
     for (int j = 0; j < total_filmes; j++) {
         if (strcmp(lista[j], busca) == 0) {
             printf("Filme encontrado na posicao %d\n", j);
@@ -57,9 +62,14 @@ int main() {
         }
     }
 
+    fim = clock();
+    double tempo = (double)(fim - inicio) / CLOCKS_PER_SEC;
+
     if (!encontrado) {
         printf("Filme nao encontrado\n");
     }
+
+    printf("Tempo gasto: %f segundos\n", tempo);
 
     // Liberar memória
     for (int j = 0; j < total_filmes; j++) {
