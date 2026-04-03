@@ -8,7 +8,7 @@
 #define REPETICOES 1000
 
 int main() {
-    FILE *dataset = fopen("../../data/movies_name.txt", "r");
+    FILE *dataset = fopen("../../data/movies_ordenado.txt", "r");
 
     if (dataset == NULL) {
         printf("Erro ao abrir arquivo\n");
