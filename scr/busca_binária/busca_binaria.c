@@ -67,9 +67,7 @@ void carregarArquivo() {
     fclose(arq);
 }
 
-// ==============================
-// MAIN
-// ==============================
+
 int main() {
     filmes = malloc(MAX * sizeof(Filme));
     if (filmes == NULL) {
