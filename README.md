@@ -1,5 +1,7 @@
 # Bench Metodos de Busca
 
+LINK DO VÍDEO: https://youtu.be/oTGsRp0r5u0
+
 Número da Lista: 29<br>
 Conteúdo da Disciplina: Buscas<br>
 
