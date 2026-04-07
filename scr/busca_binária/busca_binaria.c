@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX 110000   // um pouco maior que 100606 (margem de segurança)
+#define MAX 110000   // um pouco maior que 100606
 #define TAM_NOME 200
 #define REPETICOES 1000
 
@@ -10,7 +10,7 @@ typedef struct {
     char nome[TAM_NOME];
 } Filme;
 
-Filme *filmes;  // agora é ponteiro (heap)
+Filme *filmes;
 int total = 0;
 
 // ==============================
@@ -52,7 +52,7 @@ int buscaBinaria(char *chave, long long *comparacoes) {
 // Leitura do arquivo
 // ==============================
 void carregarArquivo() {
-    FILE *arq = fopen("/home/matheus/EDA2/data/movies_ordenado.txt", "r");
+    FILE *arq = fopen("../../data/movies_ordenado.txt", "r");
 
     if (!arq) {
         printf("Erro ao abrir arquivo.\n");
@@ -85,7 +85,7 @@ int main() {
         return 1;
     }
 
-    // Se o arquivo já estiver ordenado, pode remover
+    //Ordena o arquivo
     qsort(filmes, total, sizeof(Filme), comparar);
 
     char chave[TAM_NOME];
